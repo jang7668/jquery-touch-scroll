@@ -72,15 +72,15 @@
                 // Up or Down
                 if ( (Math.abs(touchStartY - touchEndY)) > (Math.abs(touchStartX - touchEndX))) {
                     if (Math.abs(touchStartY - touchEndY) > (window.outerWidth / 100 * options.threshold)) {
-                        if (touchStartY > touchEndY) { options.swipeUp(); }
-                        else { options.swipeDown(); }
+                        if (touchStartY > touchEndY) { options.swipeDown(); }
+                        else { options.swipeUp(); }
                     }
                 }
                 // Left or Right
                 else {
                     if (Math.abs(touchStartX - touchEndX) > (window.outerWidth / 100 * options.threshold)) {
-                        if (touchStartX > touchEndX) { options.swipeLeft(); }
-                        else { options.swipeRight(); }
+                        if (touchStartX > touchEndX) { options.swipeRight(); }
+                        else { options.swipeLeft(); }
                     }
                 }
             }
