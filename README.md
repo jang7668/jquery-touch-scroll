@@ -17,3 +17,5 @@ TODO
 ----
  -  Add Callback event data
  - Add mousewheel event
+
+Jang SeonGeun songwriterjsg@gmail.com
