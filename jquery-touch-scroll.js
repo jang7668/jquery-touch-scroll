@@ -79,8 +79,8 @@
                 // Left or Right
                 else {
                     if (Math.abs(touchStartX - touchEndX) > (window.outerWidth / 100 * options.threshold)) {
-                        if (touchStartX > touchEndX) { options.swipeRight(); }
-                        else { options.swipeLeft(); }
+                        if (touchStartX > touchEndX) { options.swipeLeft(); }
+                        else { options.swipeRight(); }
                     }
                 }
             }
