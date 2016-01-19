@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>test jquery-touch-scroll</title>
+</head>
+<style>
+    html, body {margin:0; padding:0; width:100%; height:100%;}
+    div {display:block;}
+    #debug_console { width:100%; height:100%; overflow-y:auto; background-color:#000; color:#fff; }
+</style>
+<body>
+    <div id="debug_console"></div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="jquery-touch-scroll.js"></script>
+<script>
+    function print_debug(msg) {
+        $("#debug_console").append(msg + "<br>");
+    }
+    $(document).ready(function(){
+        $("#debug_console").touchScrollEvent({
+            swipeRight : function() {
+                print_debug( "Right" );
+            },
+            swipeLeft: function() {
+                print_debug( "Left" );
+            },
+            swipeUp : function() {
+                print_debug( "Up" );
+            },
+            swipeDown : function() {
+                print_debug( "Down" );
+            }
+        });
+    });
+</script>
+</body>
+</html>
