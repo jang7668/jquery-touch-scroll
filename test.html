@@ -11,6 +11,7 @@
 </style>
 <body>
     <div id="debug_console"></div>
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="jquery-touch-scroll.js"></script>
 <script>
@@ -30,6 +31,12 @@
             },
             swipeDown : function() {
                 print_debug( "Down" );
+            },
+            scrollUp : function() {
+                print_debug("scroll Up");
+            },
+            scrollDown : function() {
+                print_debug("scroll Down");
             }
         });
     });
