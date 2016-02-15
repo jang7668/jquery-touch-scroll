@@ -21,4 +21,4 @@ TODO
 ----
  -  Add Callback event data 
 
-Jang SeonGeun songwriterjsg@gmail.com
+Jang SeonGeun jang@tjsrms.me
